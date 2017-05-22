@@ -2,9 +2,16 @@
 
 <html>
   <head>
-    <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
     <script type="text/javascript">
-      inView('#op-experience').once('enter', function() { alert('hello!'); });
+      window.onload = function() {
+        inView('#op-experience').once(
+          'enter',
+          function() { 
+            alert('hello!');
+          }
+        );
+      };
     </script>
   </head>
   
