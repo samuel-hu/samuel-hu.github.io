@@ -12,6 +12,7 @@
             fjs = d.getElementsByTagName("script")[0];
             js = d.createElement('script');
             js.src = 'https://s3.amazonaws.com/com.offerpop.experiences.prod.static/js/campaign.js';
+            js.async = 'async';
             fjs.parentNode.insertBefore(js, fjs);
           }
         );
