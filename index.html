@@ -8,10 +8,9 @@
         inView('#op-experience').once(
           'enter',
           function() { 
-            alert('hello!');
-            var js, fjs;
-            fjs = document.getElementsByTagName("script")[0];
-            js = document.createElement('script');
+            var js, fjs, d = document;
+            fjs = d.getElementsByTagName("script")[0];
+            js = d.createElement('script');
             js.src = 'https://s3.amazonaws.com/com.offerpop.experiences.prod.static/js/campaign.js';
             fjs.parentNode.insertBefore(js, fjs);
           }
